@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="rpsHeaderDiv">
+        <p id="rpsHeader">Rock Paper Scissor</p>
+        <p id="scoreText" class="scoreText">Score (first to 5 wins): </p>
+        <p class="ucScore" id="ucScore">User: <span id = "userScore"></span> || Computer: <span id = "computerScore"></span></p>
+    </div>
+    <div id="elementDiv" class="elementDiv">
+        <button value = "Rock" class="elementButtons" id="rockButton">👊</button>
+        <button value = "Paper" class="elementButtons" id="paperButton">✋</button>
+        <button value = "Scissor" class="elementButtons" id="scissorButton">✂️</button>
+    </div>
+    <p id="result"></p>
+
+    <!-- code taken from https://stackoverflow.com/questions/74179589/css-button-animation-not-starting -->
+
+    <div id="gameOver" class="gameOver">
+        <p id="finalResult"></p>
+        <button id="restartButton">Restart</button>
+    </div>
+
+    <!-- end cited code -->
+
+    <div id="transition" class="transition">
+        <p id="transitionText"></p>
+        <button id="transitionButton">Continue!</button>
+    </div>
+
+    <div id="instructions" class="instructions">
+        <p id="instructionHeader" class="instructionHeader">Instructions: </p>
+        <p id="instructionText">You'll play 3 games of Rock Paper Scissors against a computer. First to 5 points wins the game. After the 3 games, your results will be analyzed to determine how good you are at Rock Paper Scissors. Got it?</p>
+        <button id="beginButton">Start!</button>
+    </div>
+    
+    <script src="playground.js"></script>
+
+</body>
+</html>
